@@ -1,0 +1,18 @@
+Project Goals:
+ Create an entire ETL process in a database and a powerBI dashboard to utilize Customer Data and achieve goals:
+  1.Analyze Customer Data at below levels
+    a.Demographic
+    b.Geographic
+    c.Payment and Account Info
+    d.Services
+  2.Study Churner Profile and Identify Areas for Implementing Marketing Campaigns
+  3.Identify Method to Predict Future Churners
+Metrics Required:
+ 1.Total Customers
+ 2.Total Churn and Churn rate
+ 3.New Joiners
+
+ETL Framework
+1.CSV File
+2.SQL Server Management Studio
+3.SQL Server Database
