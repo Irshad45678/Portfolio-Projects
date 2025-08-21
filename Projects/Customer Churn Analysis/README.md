@@ -99,9 +99,13 @@ Prerequisites
 
 SQL Server (for ETL)
 
+SQL Server Management Studio
+
 Power BI Desktop
 
 Python 3.10+ with required libraries
+
+Jupyter Notebook
 
 Installation
 # Clone the repository
@@ -113,7 +117,7 @@ pip install -r requirements.txt
 
 Run the Model
 # Run churn prediction
-python churn_model.py
+Churn Prediction.ipynb
 
 📌 Learnings & Takeaways
 
