@@ -130,7 +130,7 @@ Irshad Shaikh
 
 📧 shaikhirshad45678@gmail.com
 
-💼 LinkedIn: Shaikh Irshad Ahmed[https://www.linkedin.com/in/shaikh-irshad-ahmed-5b570b2a7/]
+💼 LinkedIn: [@Shaikh Irshad Ahmed](https://www.linkedin.com/in/shaikh-irshad-ahmed-5b570b2a7/)
 
 📂 Portfolio Projects
 
