@@ -94,8 +94,6 @@ Confusion Matrix (Random Forest)
 
 Feature Importance Graphs
 
-ROC Curve Comparison
-
 🚀 How to Run the Project
 Prerequisites
 
