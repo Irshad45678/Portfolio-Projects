@@ -86,7 +86,7 @@ Project demonstrates data engineering, analytics, and ML expertise in one soluti
 📷 Dashboards & Outputs
 Power BI Dashboards
 
-(Attach screenshots of your Power BI dashboard here)
+[(Outputs and Dashboards)](https://github.com/Irshad45678/Portfolio-Projects/tree/main/Projects/Customer%20Churn%20Analysis/Images)
 
 Machine Learning Outputs
 
