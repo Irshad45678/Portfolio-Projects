@@ -5,21 +5,21 @@ Problem / Challenge: Telecom/Subscription companies face 20% monthly churn, risk
 
 Action:
 
-Performed ETL in SQL Server on >100,000 customer records: cleaned missing values, standardized formats, and engineered predictive features.
+1.Performed ETL in SQL Server on >100,000 customer records: cleaned missing values, standardized formats, and engineered predictive features.
 
-Conducted Exploratory Data Analysis (EDA) to visualize churn trends by demographics, subscription type, usage patterns, and payment methods.
+2.Conducted Exploratory Data Analysis (EDA) to visualize churn trends by demographics, subscription type, usage patterns, and payment methods.
 
-Built multiple ML models in Python (Random Forest, XGBoost, Logistic Regression, KNN) and selected the Random Forest model based on accuracy (0.87), precision (0.84), and recall (0.79).
+3.Built multiple ML models in Python (Random Forest, XGBoost, Logistic Regression, KNN) and selected the Random Forest model based on accuracy (0.87), precision (0.84), and recall (0.79).
 
-Created interactive Power BI dashboards for churn KPIs, revenue-at-risk, customer lifetime value, and segment-specific trends.
+4.Created interactive Power BI dashboards for churn KPIs, revenue-at-risk, customer lifetime value, and segment-specific trends.
 
 Result:
 
-Delivered a scalable, end-to-end ML pipeline for churn prediction.
+1.Delivered a scalable, end-to-end ML pipeline for churn prediction.
 
-Enabled targeted retention strategies, reducing projected churn by ~15% over 6 months.
+2.Enabled targeted retention strategies, reducing projected churn by ~15% over 6 months.
 
-Provided executive-ready dashboards for data-driven decision making.
+3.Provided executive-ready dashboards for data-driven decision making.
 
 Tech Stack: SQL Server (ETL) · Python (Pandas, Scikit-learn, Matplotlib, Seaborn) · Power BI · GitHub · Random Forest · Data Visualization · Predictive Analytics · Customer Segmentation
 
