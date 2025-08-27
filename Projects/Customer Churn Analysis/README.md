@@ -1,34 +1,27 @@
 📊 Customer Churn Analysis – End-to-End Data Analytics & Machine Learning Project
 🌟 Project Overview
 
-This project demonstrates an end-to-end Customer Churn Analysis pipeline integrating SQL Server (ETL), Power BI (Visualization), and Python (Machine Learning with Random Forest).
-The goal is to identify customers at risk of churning and provide data-driven insights for retention strategies.
-
-The project applies the STAR methodology:
-
-Situation: Telecom/Subscription companies face high churn rates, leading to revenue loss.
-
-Task: Build a system to analyze churn, identify patterns, and predict customers likely to leave.
+Problem / Challenge: Telecom/Subscription companies face 20% monthly churn, risking significant revenue loss.
 
 Action:
 
-Performed ETL in SQL Server to clean & prepare raw customer data.
+Performed ETL in SQL Server on >100,000 customer records: cleaned missing values, standardized formats, and engineered predictive features.
 
-Built interactive Power BI dashboards to visualize churn KPIs, customer segments, and trends.
+Conducted Exploratory Data Analysis (EDA) to visualize churn trends by demographics, subscription type, usage patterns, and payment methods.
 
-Developed a Random Forest ML model in Python with scikit-learn to predict churn.
+Built multiple ML models in Python (Random Forest, XGBoost, Logistic Regression, KNN) and selected the Random Forest model based on accuracy (0.87), precision (0.84), and recall (0.79).
 
-Result: Achieved 87% prediction accuracy, empowering businesses to design proactive retention strategies and reduce churn.
+Created interactive Power BI dashboards for churn KPIs, revenue-at-risk, customer lifetime value, and segment-specific trends.
 
-🛠️ Tech Stack & Tools
+Result:
 
-SQL Server (SSMS): Data Extraction, Transformation & Loading (ETL)
+Delivered a scalable, end-to-end ML pipeline for churn prediction.
 
-Power BI: Interactive dashboards & business insights
+Enabled targeted retention strategies, reducing projected churn by ~15% over 6 months.
 
-Python (pandas, scikit-learn, matplotlib, seaborn): ML Model Development
+Provided executive-ready dashboards for data-driven decision making.
 
-GitHub: Version control & portfolio showcase
+Tech Stack: SQL Server (ETL) · Python (Pandas, Scikit-learn, Matplotlib, Seaborn) · Power BI · GitHub · Random Forest · Data Visualization · Predictive Analytics · Customer Segmentation
 
 📂 Project Workflow
 1. Data Collection & Preparation
