@@ -78,15 +78,6 @@ The final deliverable was an **end-to-end Power BI dashboard** that enabled the 
 
 ---
 
-## 📸 Dashboard Preview
-
-> _Add your screenshots here using GitHub-flavored Markdown:_
-
-![Dashboard Overview](assets/dashboard-preview.png)
-![KPI Cards](assets/title bar logo.png)
-
----
-
 ## 🛠 Getting Started
 
 To explore or build upon this project:
@@ -119,6 +110,7 @@ Inv_SC_Analysis/
 ├── Inventory_Supply_Chain_Dashboard.pbix
 ├── README.md
 └── LICENSE
+
 💡 Insights & Business Questions Answered
 Which products are most frequently backordered?
 
@@ -156,9 +148,9 @@ Push to GitHub: git push origin feature/your-feature
 Submit a Pull Request
 
 📫 Contact
-💼 LinkedIn
+💼 LinkedIn: [@Shaikh Irshad Ahmed](https://www.linkedin.com/in/shaikh-irshad-ahmed-5b570b2a7/)
 
-✉️ your.email@example.com
+✉️ shaikhirshad45678@gmail.com
 
 ⭐ Like This Project?
 If this project helped or inspired you, consider giving it a ⭐ on GitHub. It helps others find and benefit from this solution.
