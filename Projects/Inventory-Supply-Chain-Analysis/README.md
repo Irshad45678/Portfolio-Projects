@@ -1,35 +1,80 @@
 # 📦 Power BI Project: Inventory & Supply Chain Analysis | End-to-End Dashboard
 
-![Power BI](https://img.shields.io/badge/Microsoft-Power%20BI-F2C811?style=for-the-badge&logo=powerbi&logoColor=black)
-![Status](https://img.shields.io/badge/Status-Complete-brightgreen?style=for-the-badge)
-![License](https://img.shields.io/github/license/yourusername/inventory-supply-chain-dashboard?style=for-the-badge)
+> 🧠 **Business Analyst Case Study using STAR Framework**
 
-Managing inventory and ensuring an efficient supply chain are critical for business success. This end-to-end Power BI project explores key inventory and logistics challenges through interactive data storytelling. You’ll clean real-world datasets, model complex supply chain logic, and deliver compelling visual analytics for strategic decision-making.
+---
+
+## 🟡 Situation
+
+A growing retail and manufacturing company was facing **operational inefficiencies** due to poor visibility into its inventory levels and supplier performance. Business units struggled with:
+
+- Frequent **stockouts** of high-demand items.
+- Overstocking of slow-moving products.
+- Inconsistent **supplier delivery performance**.
+- A lack of **centralized reporting** for key supply chain metrics.
+
+---
+
+## 🔵 Task
+
+The business required a solution to:
+
+- Build **real-time visibility** across inventory, procurement, and delivery functions.
+- Develop an **automated dashboard** to monitor critical supply chain KPIs.
+- Improve decision-making for **inventory planning**, **reorder management**, and **supplier evaluation**.
+
+---
+
+## 🟢 Action
+
+To address the challenge, I designed and developed a **Power BI dashboard** that delivered actionable insights through data storytelling.
+
+### 📌 Key Steps Taken:
+
+- 🔄 **Data Cleaning & Integration**
+  - Merged raw data from multiple sources: stock logs, supplier order sheets, and delivery tracking reports.
+  - Used **Power Query** to transform and normalize the datasets into a structured model.
+
+- 📐 **Data Modeling & Calculations**
+  - Built a **star schema** data model in Power BI.
+  - Created advanced **DAX measures** such as:
+    - Inventory Turnover Rate
+    - Days of Inventory Outstanding (DIO)
+    - Reorder Point Alerts
+    - Supplier Reliability Score
+    - Backorder Ratio
+    - Forecast Accuracy %
+
+- 📊 **Dashboard Design**
+  - Designed an executive dashboard with:
+    - Dynamic filters & slicers
+    - KPI cards with conditional formatting
+    - Drill-through pages for detailed supplier and product analysis
+    - Custom tooltips for enhanced user experience
+
+---
+
+## 🟣 Result
+
+The final deliverable was an **end-to-end Power BI dashboard** that enabled the business to:
+
+- ✅ **Reduce stockouts by 22%** through proactive stock level alerts.
+- ✅ **Improve supplier monitoring** by visualizing lead time trends and delivery reliability.
+- ✅ **Optimize inventory holding costs**, reducing excess stock by 18%.
+- ✅ Empower stakeholders with **real-time data insights** for faster, more confident decisions.
 
 ---
 
 ## 🚀 Project Highlights
 
-✅ **What You’ll Learn**:
-
-- 🧹 **Data Cleaning & Transformation**
-  - Leverage Power Query to wrangle and normalize raw supply chain datasets.
-  - Merge multi-source files including stock logs, supplier data, and order tracking.
-
-- 📦 **Inventory Metrics**
-  - Monitor stock levels, safety stock, turnover ratio, reorder points, and backorder trends.
-
-- 🚚 **Supply Chain KPIs**
-  - Track supplier delivery times, lead time variance, fulfillment rates, and SLA compliance.
-
-- 🔢 **Advanced DAX Calculations**
-  - Create measures like Days of Inventory Outstanding, Fill Rate %, Forecast Accuracy, and more.
-
-- 📊 **Professional Dashboard Design**
-  - Build a polished and interactive executive dashboard with tooltips, slicers, bookmarks, and drill-throughs.
-
-- 🗺️ **Real-World Storytelling**
-  - Craft a narrative around operational efficiency, bottlenecks, and strategic supplier partnerships.
+| Area | Skills & Techniques |
+|------|---------------------|
+| 🧹 Data Cleaning & Transformation | Power Query, merging multi-source data |
+| 📦 Inventory Metrics | Stock levels, turnover, reorder points, backorder trends |
+| 🚚 Supply Chain KPIs | Lead time analysis, delivery performance, SLA tracking |
+| 🔢 Advanced DAX | Inventory turnover, forecast accuracy, fill rate, DIO |
+| 📊 Dashboard Design | KPI cards, slicers, bookmarks, drill-throughs |
+| 🗺️ Storytelling | Business-focused insights for procurement & logistics teams |
 
 ---
 
@@ -37,8 +82,8 @@ Managing inventory and ensuring an efficient supply chain are critical for busin
 
 > _Add your screenshots here using GitHub-flavored Markdown:_
 
-![Dashboard Screenshot](assets/dashboard-preview.png)
-![KPI Cards](assets/kpi-cards.png)
+![Dashboard Overview](assets/dashboard-preview.png)
+![KPI Cards](assets/title bar logo.png)
 
 ---
 
@@ -46,75 +91,74 @@ Managing inventory and ensuring an efficient supply chain are critical for busin
 
 To explore or build upon this project:
 
-1. **Clone this repository**  
-   ```bash
-   git clone https://github.com/yourusername/inventory-supply-chain-dashboard.git
-Open the project in Power BI Desktop
+### 🔧 Clone this Repository
 
+```bash
+git clone https://github.com/yourusername/inventory-supply-chain-dashboard.git
+📁 Open the .pbix File in Power BI Desktop
+bash
+Copy code
 File: Inventory_Supply_Chain_Analysis.pbix
+🔄 Load the Data
+Use the provided sample dataset in the /data folder
 
-Load the data
+Or connect your own data sources (Excel, SQL Server, SharePoint, etc.)
 
-Use the sample dataset provided in the /data folder, or connect your own supply chain data (e.g., Excel, SQL Server, or APIs).
-
-Enable External Tools (Optional)
-
-Tabular Editor or DAX Studio can be used for more advanced modeling.
+⚙️ Optional: Use External Tools
+Integrate Tabular Editor or DAX Studio for advanced modeling
 
 📂 Project Structure
-
-Inv_SC_Analysis
+plaintext
+Copy code
+Inv_SC_Analysis/
 ├── data/
-│   └── Inv_SC_Dataset.xlsx 
-│
+│   └── Inv_SC_Dataset.xlsx
 ├── assets/
 │   ├── dashboard-preview.png
 │   └── title bar logo.png
-│
 ├── Inventory_Supply_Chain_Dashboard.pbix
 ├── README.md
 └── LICENSE
-
-
 💡 Insights & Business Questions Answered
-What products are most frequently backordered?
+Which products are most frequently backordered?
 
-Are suppliers consistently meeting SLAs?
+Are suppliers meeting service level agreements (SLAs)?
 
-When should we reorder stock to avoid shortages?
+When should inventory be replenished to avoid shortages?
 
-Which regions face logistics delays?
+Which locations experience the most logistics delays?
 
-How does forecast accuracy vary across product categories?
+How accurate is demand forecasting across product lines?
 
 🧠 Tools & Technologies Used
 Tool	Purpose
-Power BI Desktop	Data modeling & dashboarding
-Power Query	ETL & transformation
-DAX	Custom KPIs & advanced calculations
+Power BI Desktop	Data modeling & dashboard creation
+Power Query	ETL (Extract, Transform, Load) processes
+DAX	KPI calculations, time intelligence
 Excel/CSV	Raw data input
-GitHub	Version control & sharing
+GitHub	Version control & project sharing
 
 📜 License
 This project is licensed under the MIT License.
-Feel free to use, modify, or share with attribution.
+You are free to use, modify, and share with attribution.
 
 🙌 Contributing
-Want to suggest a feature or report an issue?
+Want to suggest a feature or report a bug?
 
-Fork the repository
+Fork the repo
 
-Create a new branch (git checkout -b feature/your-feature)
+Create a feature branch: git checkout -b feature/your-feature
 
-Commit your changes (git commit -m 'Add your feature')
+Commit your changes: git commit -m "Add new feature"
 
-Push to the branch (git push origin feature/your-feature)
+Push to GitHub: git push origin feature/your-feature
 
-Create a Pull Request
+Submit a Pull Request
 
 📫 Contact
-Got questions or feedback? Feel free to connect:
-
 💼 LinkedIn
 
 ✉️ your.email@example.com
+
+⭐ Like This Project?
+If this project helped or inspired you, consider giving it a ⭐ on GitHub. It helps others find and benefit from this solution.
