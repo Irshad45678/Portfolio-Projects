@@ -148,7 +148,7 @@ Push to GitHub: git push origin feature/your-feature
 Submit a Pull Request
 
 📫 Contact
-💼 LinkedIn: [@Shaikh Irshad Ahmed](https://www.linkedin.com/in/shaikh-irshad-ahmed-5b570b2a7/)
+💼 LinkedIn: Shaikh Irshad Ahmed
 
 ✉️ shaikhirshad45678@gmail.com
 
