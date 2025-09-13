@@ -1,4 +1,4 @@
-# 📦 Power BI Project: Inventory & Supply Chain Analysis | End-to-End Dashboard
+# 📦 Power BI Project: Inventory & Supply Chain Analysis
 
 > 🧠 **Business Analyst Case Study using STAR Framework**
 
