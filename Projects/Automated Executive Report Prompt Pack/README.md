@@ -119,36 +119,41 @@ See `examples/` for CSVs and example outputs that match each report type.
 - CSV preview fails? The app still shows the raw CSV in code format; verify delimiter and encoding.
 - Model errors? Try a different model name (e.g., `gpt-4o` or `gpt-3.5-turbo`) in the sidebar.
 
-## Next steps (optional enhancements)
-- Add charts for trends (Streamlit `st.line_chart`, `st.bar_chart`).
-- Provider adapter to switch between OpenAI/Claude/Gemini.
-- `.env.example` and `.gitignore` for cleaner setup.
-- Screenshots and badges in this README.
-- One-click deploy to Streamlit Community Cloud.
-
-## License
-Add your preferred license (MIT recommended) as `LICENSE` in the repo root.
-
 
 ## Full Forms
 CEO: Chief Executive Officer
+
 CFO: Chief Financial Officer
+
 CHRO: Chief Human Resources Officer
+
 ROI: Return on Investment
+
 L&D: Learning and Development
+
 SLA: Service Level Agreement
+
 KPI: Key Performance Indicator
+
 DAU: Daily Active Users
+
 EMEA: Europe, Middle East, and Africa
 
 ## Audience Roles
 CEO: Needs high-level outcomes, revenue/profit impact, and 1–2 decisions. Minimal detail; focus on direction, risks, and ROI.
+
 Manager: Needs operational levers to act on (regions, funnel steps, staffing). Short, specific actions and owners.
+
 Analyst: Needs concise metrics, deltas, and simple calculations. Clear assumptions, KPI table, and data-grounded insights.
+
 CFO: Needs revenue, cost, margin trends, variance notes, and risk controls. Emphasis on cash/margin and efficiency levers.
+
 CHRO: Needs hiring vs attrition, retention risks, pipeline health, and program-level actions (L&D, comp, policy).
+
 Support Manager: Needs ticket volume, resolution SLA, response-time trends, backlog, and process/staffing fixes.
+
 How this changes the report:
 Tone: CEO/CFO more strategic; Manager/Support Manager action-focused; Analyst metric-focused.
 Detail: Analyst > Manager > Execs.
+
 Sections: All get Executive Summary + KPI Table; Analyst/Managers get more granular bullets and specific owners.
