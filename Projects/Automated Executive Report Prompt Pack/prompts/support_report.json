@@ -1,0 +1,36 @@
+{
+  "name": "Customer Support Report",
+  "description": "Summarizes support ticket volume, resolution, response times, and recurring issues.",
+  "schema_version": "1.0",
+  "variables": {
+    "audience_role": {
+      "description": "Intended reader (e.g., COO, Support Manager, Analyst)",
+      "required": true
+    },
+    "support_data": {
+      "description": "Support data (CSV/JSON/Text) with tickets raised/resolved, response time, backlog",
+      "required": true
+    },
+    "timeframe": {
+      "description": "Reporting period (e.g., Q1 2025)",
+      "required": false,
+      "default": "Current period"
+    }
+  },
+  "prompt": {
+    "system": "You are an executive assistant specializing in CX and support analytics. Produce quantified, prescriptive outputs. Do not ask questions; if needed, include one-line assumptions.",
+    "user": "You are preparing a Customer Support Report for the {audience_role}.\nInput support data (includes an injected KPI table below):\n{support_data}\n\nTasks:\n- Executive Summary: 1–2 lines.\n- Key Insights: exactly 4 bullets (tickets volume, resolution %, response time).\n- Risks: exactly 3 bullets.\n- Recommendations: exactly 3 bullets; each includes a measurable target (e.g., 'reduce response time to <30m').\n- Timeframe: {timeframe}.\n\nOutput style (strict):\n- Headings: # Title, ## Executive Summary, ## Key Insights, ## Risks, ## Recommendations, ## KPI Table.\n- Under '## KPI Table', reproduce the KPI table provided between the [KPI Table] markers verbatim.\n- <= 300 words."
+  },
+  "guardrails": [
+    "Do not overgeneralize from limited samples; call out constraints briefly.",
+    "Quantify metrics when available; avoid ambiguous statements.",
+    "Do not compare to periods not present in the input; use 'N/A' if missing."
+  ],
+  "audience_variants": {
+    "COO": { "style_notes": "Focus on customer impact and operational stability." },
+    "Support Manager": { "style_notes": "Emphasize staffing, SLA adherence, and process levers." },
+    "Analyst": { "style_notes": "Add compact metrics like resolution rate and backlog deltas." }
+  }
+}
+
+

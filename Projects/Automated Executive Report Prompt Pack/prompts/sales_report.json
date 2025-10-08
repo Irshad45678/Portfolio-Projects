@@ -1,0 +1,45 @@
+{
+  "name": "Sales Performance Report",
+  "description": "Generates an executive-style summary of sales performance with insights, risks, and recommendations.",
+  "schema_version": "1.0",
+  "variables": {
+    "audience_role": {
+      "description": "Intended reader of the report (e.g., CEO, Manager, Analyst)",
+      "required": true
+    },
+    "sales_data": {
+      "description": "Structured or unstructured sales data (CSV/JSON/Text)",
+      "required": true
+    },
+    "timeframe": {
+      "description": "Reporting period (e.g., Jan–Mar 2025)",
+      "required": false,
+      "default": "Current period"
+    }
+  },
+  "prompt": {
+    "system": "You are an executive assistant specializing in business reporting. Produce decisive, quantified, and structured outputs. Never ask the user questions. If data is limited, state one short assumption line and continue.",
+    "user": "You are preparing a Sales Performance Report for the {audience_role}.\nInput sales data (includes optional KPI table appended by the app):\n{sales_data}\n\nTasks:\n- Executive Summary: 1–2 lines.\n- Key Insights: exactly 4 bullets with specific numbers or % deltas from the provided data only.\n- Risks & Anomalies: exactly 3 bullets tied to the provided data.\n- Recommendations: exactly 3 bullets; each starts with a strong verb and is data-linked.\n- If relevant, reference the timeframe: {timeframe}.\n\nOutput style (strict):\n- Markdown headings in this order: # Title, ## Executive Summary, ## Key Insights, ## Risks & Anomalies, ## Recommendations, ## KPI Table.\n- Under '## KPI Table', reproduce the KPI table provided between the [KPI Table] markers verbatim; if no table present, write 'KPI table: N/A'.\n- Keep total length under ~300 words.\n- Do not include placeholders like [Insert %] or questions; if unknown, write 'N/A'."
+  },
+  "guardrails": [
+    "Do not invent data not present or infer beyond reasonable trends.",
+    "If data is insufficient, state assumptions clearly in one short line.",
+    "Keep numbers consistent with provided inputs.",
+    "Do not compare to periods not present in the input; use 'N/A' if missing.",
+    "Do not output placeholders (e.g., '[Insert %]') or ask questions.",
+    "Ground all statements in the provided data and KPI table only."
+  ],
+  "audience_variants": {
+    "CEO": {
+      "style_notes": "Emphasize high-level outcomes, revenue impact, and 1–2 decisions."
+    },
+    "Manager": {
+      "style_notes": "Include brief operational levers (conversion rate, pipeline, regions)."
+    },
+    "Analyst": {
+      "style_notes": "Add concise metric deltas and simple calculations when relevant."
+    }
+  }
+}
+
+

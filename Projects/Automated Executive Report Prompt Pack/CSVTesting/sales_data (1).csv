@@ -1,0 +1,60 @@
+Month,Revenue,Leads,ClosedDeals,Region
+Jan,120000,200,150,Maharashtra
+Feb,90000,180,120,Delhi
+Mar,150000,210,170,Karnataka
+Apr,110000,190,140,West Bengal
+May,130000,220,160,Maharashtra
+Jun,95000,175,115,Delhi
+Jul,140000,205,165,Karnataka
+Aug,115000,195,145,West Bengal
+Sep,125000,215,155,Maharashtra
+Oct,100000,185,125,Delhi
+Nov,135000,225,175,Karnataka
+Dec,105000,170,130,West Bengal
+Jan,122000,202,152,Maharashtra
+Feb,92000,182,122,Delhi
+Mar,152000,212,172,Karnataka
+Apr,112000,192,142,West Bengal
+May,132000,222,162,Maharashtra
+Jun,97000,177,117,Delhi
+Jul,142000,207,167,Karnataka
+Aug,117000,197,147,West Bengal
+Sep,127000,217,157,Maharashtra
+Oct,102000,187,127,Delhi
+Nov,137000,227,177,Karnataka
+Dec,107000,172,132,West Bengal
+Jan,124000,204,154,Maharashtra
+Feb,94000,184,124,Delhi
+Mar,154000,214,174,Karnataka
+Apr,114000,194,144,West Bengal
+May,134000,224,164,Maharashtra
+Jun,99000,179,119,Delhi
+Jul,144000,209,169,Karnataka
+Aug,119000,199,149,West Bengal
+Sep,129000,219,159,Maharashtra
+Oct,104000,189,129,Delhi
+Nov,139000,229,179,Karnataka
+Dec,109000,174,134,West Bengal
+Jan,126000,206,156,Maharashtra
+Feb,96000,186,126,Delhi
+Mar,156000,216,176,Karnataka
+Apr,116000,196,146,West Bengal
+May,136000,226,166,Maharashtra
+Jun,101000,181,121,Delhi
+Jul,146000,211,171,Karnataka
+Aug,121000,201,151,West Bengal
+Sep,131000,221,161,Maharashtra
+Oct,106000,191,131,Delhi
+Nov,141000,231,181,Karnataka
+Dec,111000,176,136,West Bengal
+Jan,128000,208,158,Maharashtra
+Feb,98000,188,128,Delhi
+Mar,158000,218,178,Karnataka
+Apr,118000,198,148,West Bengal
+May,138000,228,168,Maharashtra
+Jun,103000,183,123,Delhi
+Jul,148000,213,173,Karnataka
+Aug,123000,203,153,West Bengal
+Sep,133000,223,163,Maharashtra
+Oct,108000,193,133,Delhi
+Nov,143000,233,183,Karnataka

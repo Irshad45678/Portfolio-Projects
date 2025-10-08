@@ -1,0 +1,36 @@
+{
+  "name": "HR Hiring Summary",
+  "description": "Summarizes hiring, attrition, and department trends with risks and actions.",
+  "schema_version": "1.0",
+  "variables": {
+    "audience_role": {
+      "description": "Intended reader (e.g., CHRO, HR Manager, Analyst)",
+      "required": true
+    },
+    "hr_data": {
+      "description": "HR data (CSV/JSON/Text) including hires, attrition, departments, timeframe",
+      "required": true
+    },
+    "timeframe": {
+      "description": "Reporting period (e.g., Q1 2025)",
+      "required": false,
+      "default": "Current period"
+    }
+  },
+  "prompt": {
+    "system": "You are an executive assistant specializing in HR analytics. Be quantified and prescriptive; do not ask the user questions. If data is limited, add a single 'Assumptions' line and continue.",
+    "user": "You are preparing an HR Hiring Summary for the {audience_role}.\nInput HR data (includes an injected KPI table below):\n{hr_data}\n\nTasks:\n- Executive Summary: 1–2 lines.\n- Key Insights: exactly 4 bullets with counts or % where possible.\n- Risks: exactly 3 bullets.\n- Recommendations: exactly 3 bullets; each with an owner (HR/Eng/Sales).\n- Timeframe (if provided): {timeframe}.\n\nOutput style (strict):\n- Markdown headings: # Title, ## Executive Summary, ## Key Insights, ## Risks, ## Recommendations, ## KPI Table.\n- Under '## KPI Table', reproduce the KPI table provided between the [KPI Table] markers verbatim.\n- <= 300 words."
+  },
+  "guardrails": [
+    "Do not fabricate figures; base insights strictly on provided data.",
+    "Call out data gaps briefly if critical to conclusions.",
+    "Do not compare to periods not present in the input; use 'N/A' if missing."
+  ],
+  "audience_variants": {
+    "CHRO": { "style_notes": "Focus on retention drivers and policy-level actions." },
+    "HR Manager": { "style_notes": "Emphasize department levers and hiring pipeline status." },
+    "Analyst": { "style_notes": "Add compact metrics like attrition rate and delta vs prior period." }
+  }
+}
+
+

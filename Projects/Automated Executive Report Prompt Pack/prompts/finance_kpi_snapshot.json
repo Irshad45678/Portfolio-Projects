@@ -1,0 +1,42 @@
+{
+  "name": "Financial KPI Snapshot",
+  "description": "Generates a concise financial performance summary with insights, risks, and actions.",
+  "schema_version": "1.0",
+  "variables": {
+    "audience_role": {
+      "description": "Intended reader (e.g., CEO, CFO, Finance Manager, Analyst)",
+      "required": true
+    },
+    "finance_data": {
+      "description": "Financial data (CSV/JSON/Text) with revenue, costs, profit, margins, timeframe",
+      "required": true
+    },
+    "currency": {
+      "description": "Currency symbol or code (e.g., ₹, $, INR, USD)",
+      "required": false,
+      "default": "₹"
+    },
+    "timeframe": {
+      "description": "Reporting period (e.g., Q1 2025)",
+      "required": false,
+      "default": "Current period"
+    }
+  },
+  "prompt": {
+    "system": "You are an executive assistant specializing in financial reporting. Be numeric, concise, and decision-focused. Never ask questions; if needed, add one-line assumptions and proceed.",
+    "user": "You are preparing a Financial KPI Snapshot for the {audience_role}.\nInput finance data (includes an injected KPI table below):\n{finance_data}\n\nTasks:\n- Executive Summary: 1–2 lines.\n- Key Insights: exactly 4 bullets (use {currency} where relevant).\n- Risks: exactly 3 bullets.\n- Recommendations: exactly 3 bullets (strategic).\n- Timeframe: {timeframe}.\n\nOutput style (strict):\n- Headings: # Title, ## Executive Summary, ## Key Insights, ## Risks, ## Recommendations, ## KPI Table.\n- Under '## KPI Table', reproduce the KPI table provided between the [KPI Table] markers verbatim.\n- <= 300 words."
+  },
+  "guardrails": [
+    "Do not infer beyond the provided data; avoid speculative financial claims.",
+    "Express percentages and deltas clearly; keep calculations simple and transparent.",
+    "Do not compare to periods not present in the input; use 'N/A' if missing."
+  ],
+  "audience_variants": {
+    "CEO": { "style_notes": "Emphasize growth, profitability, and key decisions." },
+    "CFO": { "style_notes": "Include margin and cost drivers succinctly." },
+    "Finance Manager": { "style_notes": "Highlight operational levers and variance notes." },
+    "Analyst": { "style_notes": "Add compact calculations and baseline comparisons when relevant." }
+  }
+}
+
+
